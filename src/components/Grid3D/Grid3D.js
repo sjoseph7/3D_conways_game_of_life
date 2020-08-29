@@ -33,13 +33,6 @@ export default class Grid3D extends Component {
 
     // OTHER
     this._frame = 0;
-    // this.controls = new THREE.OrbitControls(
-    //   this.camera,
-    //   this.renderer.domElement
-    // );
-    // this.controls.update();
-    // this.controls = new THREE.TrackballControls(this.camera);
-    // this.controls.target.set(0, 0, 0); /Help from -> https://stackoverflow.com/a/8427966
   }
   componentDidMount = () => {
     this.setupScene();
@@ -82,11 +75,7 @@ export default class Grid3D extends Component {
           let cube = new THREE.Mesh(
             new THREE.BoxGeometry(cubeSize, cubeSize, cubeSize),
             new THREE.MeshBasicMaterial({
-              color: gradient(
-                this.lowColor,
-                this.highColor,
-                0 //Math.random() * 0.4
-              ),
+              color: gradient(this.lowColor, this.highColor, 0),
               opacity: state ? 0.9 : 0.1,
               transparent: true
             })
@@ -162,7 +151,7 @@ export default class Grid3D extends Component {
       );
     });
 
-    // TODO: Color code the "creatures"
+    // Color code the "creatures"
     const uf = new unionFind(Math.pow(this.gridShape * 2 + 1, 3));
     const activeCubeCoordinates = getActiveCubeCoordinates(this.grid);
 
