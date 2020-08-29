@@ -1,3 +1,8 @@
+/**
+ * This class implements a union find algorithm that is used to
+ *    quickly classify groups of connected cells.
+ */
+
 export default class unionFind {
   constructor(N, options) {
     this.id = [];
