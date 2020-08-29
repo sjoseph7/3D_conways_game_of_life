@@ -2,7 +2,7 @@
 
 After building a [2D Conway's Game of Life](https://github.com/sjoseph520/conways_game_of_life), I wondered what a 3D version would look like... so I built this.
 
-The board is The original Conway's Game of life rules don't work as well in 3D space, so after some experimentation I made my own that make for interesting visualizations (that don't immediately collapse) in a 7x7 grid.
+The board is a 7x7x7 grid (mostly because that's the most my laptop could handle 😅). The original Conway's Game of Life rules don't work as well in 3D space, so after some experimentation I made my own that make for interesting visualizations (that don't immediately collapse) in a 7x7 grid.
 
 3D Rules:
 
