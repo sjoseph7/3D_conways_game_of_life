@@ -6,7 +6,7 @@ The board is The original Conway's Game of life rules don't work as well in 3D s
 
 3D Rules:
 
-- If cell is alive and has fewer than 7 neighbors or more than 9 neighbors, it lives; otherwise it dies.
-- If a cell is dead but has exactly 4 or 10 neighbors, it is 'revived'; otherwise, it stays dead.
+- If cell is alive and has `fewer than 7 neighbors` or `more than 9 neighbors`, it lives; otherwise it dies.
+- If a cell is dead but has `exactly 4 or 10 neighbors`, it is 'revived'; otherwise, it stays dead.
 
 I also have a 2D version: ([link](https://github.com/sjoseph7/conways_game_of_life)) ([site](https://sjoseph7-conways-game-of-life.netlify.app/))
